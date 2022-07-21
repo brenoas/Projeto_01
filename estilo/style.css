@@ -8,7 +8,6 @@
 /**boot css**/
 
 html,body{
-    overflow-x: hidden;
     height: 100%;
 }
 
@@ -269,7 +268,12 @@ footer p{
     font-size: 16px;
 }
 
-
+/*
+Para arrumar scroll-x do IE
+*/
+body{
+    overflow-x: hidden;
+}
 section.erro-404 .center{
     padding-top: 25%;
     display: flexbox;
