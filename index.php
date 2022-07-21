@@ -41,7 +41,7 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>sontato">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
             <!--desktop-->
@@ -53,7 +53,7 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>sontato">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
             <!--mobile-->
@@ -89,7 +89,7 @@
     <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
     <?php
 
-    if ($url == 'Contato') {
+    if ($url == 'contato') {
 
     ?>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2ZjAo9A9M0f_Hqsn8up8vGv9QhVZC214"></script>
