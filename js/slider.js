@@ -1,12 +1,12 @@
 $(function () {
 
     var curSlide = 0;
-    var maxSlide = $('.banner-single').lenght - 1;
-    var delay = 3;
+    var maxSlide = 3;
+    var delay = 4;
 
-
-    initSlider();
-    changeSlide();
+    
+        initSlider();
+        changeSlide();
 
 
     function initSlider() {
@@ -16,11 +16,13 @@ $(function () {
 
     function changeSlide() {
         setInterval(function() {
-            $('.banner-single').eq(curSlide).fadeOut(2000);
+            $('.banner-single').eq(curSlide).fadeOut(1000);
             curSlide++;
-            if (curSlide > maxSlide)
+            console.log(maxSlide);
+            console.log(curSlide);
+            if (curSlide == maxSlide)
             curSlide = 0;
-            $('.banner-single').eq(curSlide).fadeIn(2000, function(){
+            $('.banner-single').eq(curSlide).fadeIn(1000, function(){
 
             });
         }, delay * 1000);
