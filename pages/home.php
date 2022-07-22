@@ -1,4 +1,7 @@
-<section class="banner-principal">
+<section class="banner-container">
+    <div style="background-image: url('<?php echo INCLUDE_PATH; ?>imagens/bg-form.jpg');" class="banner-single"></div><!--banner-single-->
+    <div style="background-image: url('<?php echo INCLUDE_PATH; ?>imagens/bg-form2.jpg');" class="banner-single"></div><!--banner-single-->
+    <div style="background-image: url('<?php echo INCLUDE_PATH; ?>imagens/bg-form3.jpg');" class="banner-single"></div><!--banner-single-->
         <div class="overlay"></div>
         <!--overlay-->
         <div class="center">
@@ -10,7 +13,7 @@
         </div>
         <!--center-->
     </section>
-    <!--banner-principal-->
+    <!--banner-container-->
 
     <section class="descricao-autor">
         <div class="center">

@@ -88,11 +88,16 @@
     <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
     <?php
-
-    if ($url == 'contato') {
-
+    if ($url == 'home' || $url = '') {
     ?>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2ZjAo9A9M0f_Hqsn8up8vGv9QhVZC214"></script>
+        <script src="<?php echo INCLUDE_PATH; ?>js/slider.js"></script>
+    <?php
+    }
+    ?>
+    <?php
+    if ($url == 'contato') {
+    ?>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA871HtbVQfVzeEaubf54bj1FtvLrnT6h0"></script>
         <script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
     <?php
     }
