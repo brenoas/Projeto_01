@@ -1,7 +1,7 @@
 $(function () {
 
     var curSlide = 0;
-    var maxSlide = 3;
+    var maxSlide = $('.banner-single').length - 1;
     var delay = 4;
 
     
@@ -12,6 +12,11 @@ $(function () {
     function initSlider() {
         $('.banner-single').hide();
         $('.banner-single').eq(0).show();
+        for (var i = 0; i < maxSlide+1; i++) {
+            var content = $('.bullets').html();
+            content+='<span></span>'
+            $('.bullets').html(content);
+        }
     }
 
     function changeSlide() {
@@ -20,7 +25,7 @@ $(function () {
             curSlide++;
             console.log(maxSlide);
             console.log(curSlide);
-            if (curSlide == maxSlide)
+            if (curSlide > maxSlide)
             curSlide = 0;
             $('.banner-single').eq(curSlide).fadeIn(1000, function(){
 

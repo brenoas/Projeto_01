@@ -356,6 +356,40 @@ section.erro-404 a{
     /*-webkit-text-stroke: 1px black;*/
 }
 
+.bullets {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.bullets span{
+    margin-inline: 6px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #424685;
+    border: 1px solid blueviolet;
+    
+}
+
+.bullets span.active-slider{
+    background: #424685;
+    border: 2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
 
 /**/
 /* regras do responsivo */
