@@ -18,7 +18,7 @@
 </head>
 
 <body>
-
+<base base="<?php echo INCLUDE_PATH; ?>"/>
     <?php
     $url = isset($_GET['url']) ? $_GET['url'] : 'home';
     switch ($url) {
@@ -41,7 +41,8 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                    <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                    <li><a realtime href="<?php echo INCLUDE_PATH; ?>outro-menu">Outro Menu</a></li>
                 </ul>
             </nav>
             <!--desktop-->
@@ -53,7 +54,8 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                    <li><a realtime href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                    <li><a realtime href="<?php echo INCLUDE_PATH; ?>outro-menu">Outro Menu</a></li>
                 </ul>
             </nav>
             <!--mobile-->
@@ -62,6 +64,8 @@
         <div class="clear"></div>
 
     </header>
+
+    <div class="container-principal">
 
     <?php
 
@@ -78,6 +82,8 @@
 
     ?>
 
+    </div><!--container-principal-->
+
     <footer <?php if (isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
         <div class="center">
             <p>Os direitos não são protegidos no brasil.</p>
@@ -86,6 +92,8 @@
     </footer>
 
     <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA871HtbVQfVzeEaubf54bj1FtvLrnT6h0"></script>
+        <script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
     <?php
     if ($url == 'home' || $url = '') {
@@ -97,8 +105,7 @@
     <?php
     if ($url == 'contato') {
     ?>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA871HtbVQfVzeEaubf54bj1FtvLrnT6h0"></script>
-        <script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
+        
     <?php
     }
     ?>
