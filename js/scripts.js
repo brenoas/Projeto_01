@@ -74,6 +74,7 @@ $(function(){
             var pagina = $(this).attr('realtime');
             $('.container-principal').hide();
             $('.container-principal').load(include_path+'pages/'+pagina+'.php');
+            
             initialize();
             addMarker(-22.903608642161792, -43.266081366864526, "", "Minha casa", undefined, false);
             $('.container-principal').fadeIn(1000);

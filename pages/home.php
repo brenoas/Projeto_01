@@ -59,6 +59,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore vitae accusantium? Libero eligendi delectus dolorum pariatur nostrum fugiat saepe dignissimos exercitationem, recusandae nam quibusdam sunt odit illo repellendus voluptatem.</p>
             </div>
             <!--box-especialidades-->
+            
             <div class="clear"></div>
         </div>
         <!--center-->

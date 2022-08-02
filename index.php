@@ -14,7 +14,7 @@
     <meta name="description" content="Descrição do meu website">
     <meta name="keywords" content="palavras, chave, do, meu, web, site">
     <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/style.css">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo INCLUDE_PATH; ?>favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -32,6 +32,8 @@
     }
     ?>
 
+    <?php new Email(); ?>
+
     <header>
         <div class="center">
             <div class="logo left"> <a href="/">Logomarca</a></div>
@@ -42,7 +44,6 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
                     <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
-                    <li><a realtime href="<?php echo INCLUDE_PATH; ?>outro-menu">Outro Menu</a></li>
                 </ul>
             </nav>
             <!--desktop-->
@@ -54,8 +55,7 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a realtime href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
-                    <li><a realtime href="<?php echo INCLUDE_PATH; ?>outro-menu">Outro Menu</a></li>
+                    <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
             <!--mobile-->
@@ -109,6 +109,7 @@
     <?php
     }
     ?>
+    <script src="<?php echo INCLUDE_PATH; ?>js/exemplo.js"></script>
 
 </body>
 

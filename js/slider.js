@@ -26,8 +26,6 @@ $(function () {
         setInterval(function() {
             $('.banner-single').eq(curSlide).fadeOut(800);
             curSlide++;
-            console.log(maxSlide);
-            console.log(curSlide);
             if (curSlide > maxSlide)
             curSlide = 0;
             $('.banner-single').eq(curSlide).fadeIn(800);
