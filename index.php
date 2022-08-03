@@ -31,7 +31,7 @@
             break;
     }
     ?>
-
+    
     <?php new Email(); ?>
 
     <header>

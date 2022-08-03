@@ -2,7 +2,7 @@
 
   $autoload = function($class){
     if($class == 'Email'){
-      include('classes/phpmailer/src/PHPMailer.php');
+      include('classes/vendor/autoload.php');
     }
     include('classes/'.$class.'.php');
   };
